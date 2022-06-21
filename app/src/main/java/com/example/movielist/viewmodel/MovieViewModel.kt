@@ -9,7 +9,7 @@ import com.example.movielist.model.Movie
 import com.example.movielist.network.*
 
 class MovieViewModel: ViewModel() {
-    private val _movieList = mutableStateListOf<Movie>()
+     val _movieList = mutableStateListOf<Movie>()
     var errorMessage: String by mutableStateOf("")
     val movies: List<Movie>
        get() = _movieList
